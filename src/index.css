@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Archivo+Black&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --black:   #0a0a0a;
+  --white:   #fafaf5;
+  --yellow:  #ffe135;
+  --red:     #ff3f3f;
+  --blue:    #3b5bdb;
+  --green:   #2dce89;
+  --orange:  #ff6b35;
+  --pink:    #ff6fd8;
+  --shadow:    4px 4px 0px var(--black);
+  --shadow-lg: 6px 6px 0px var(--black);
+  --shadow-xl: 8px 8px 0px var(--black);
+  --border:  2.5px solid var(--black);
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: var(--yellow);
+  background-image: radial-gradient(circle, var(--black) 1px, transparent 1px);
+  background-size: 28px 28px;
+  color: var(--black);
+  min-height: 100vh;
+  padding: 40px 16px 80px;
+  overflow-x: clip; /* clips horizontal without creating a scroll container */
+}
+
+#root { min-height: 100vh; }
+
+/* ── Brutalist page scrollbar ── */
+::-webkit-scrollbar       { width: 10px; }
+::-webkit-scrollbar-track { background: var(--yellow); border-left: 2.5px solid var(--black); }
+::-webkit-scrollbar-thumb { background: var(--black); }
+::-webkit-scrollbar-thumb:hover { background: var(--red); }
